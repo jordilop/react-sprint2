@@ -19,8 +19,15 @@ $navbar-light-toggler-border-color: 0;
 $navbar-nav-link-padding-x:         1.5rem;
 
 //Modificaciones button
-$input-btn-padding-y:         .5rem;
-$input-btn-padding-x:         1.5rem;
+$input-btn-padding-y:               .5rem;
+$input-btn-padding-x:               1.5rem;
+
+// Modificaciones tabs
+$nav-link-color:                    rgba($negro, .9);
+$nav-link-hover-color:              $secondary;
+$nav-tabs-link-hover-border-color:  $blanco;
+$nav-tabs-link-active-color:        $negro;
+$nav-tabs-link-active-border-color: $blanco $blanco $secondary $blanco;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -65,6 +72,23 @@ $input-btn-padding-x:         1.5rem;
     height: 70%;
     border-radius: 50% 0 0 50%;
     z-index: -1;
+}
+
+.bg-shape-rotate {
+    width: 70%;
+    height: 70%;
+    border-radius: 0 50% 50% 0;
+    z-index: -1;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid $secondary;
+}
+
+@media all and (max-width: 768px) {
+    .nav-tabs {
+        border-top: 1px solid #dee2e6;
+    }
 }
 
 // @media all and (max-width: 768px) {

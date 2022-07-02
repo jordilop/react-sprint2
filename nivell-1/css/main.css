@@ -3932,7 +3932,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #5265E1;
+  color: rgba(0, 0, 0, 0.9);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3942,7 +3942,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #4251b4;
+  color: #FA5959;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -3961,7 +3961,7 @@ textarea.form-control-lg {
   border-top-right-radius: 0.25rem;
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
+  border-color: #fff;
   isolation: isolate;
 }
 .nav-tabs .nav-link.disabled {
@@ -3971,9 +3971,9 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #000;
   background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  border-color: #fff #fff #FA5959 #fff;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -11303,4 +11303,21 @@ textarea.form-control-lg {
   height: 70%;
   border-radius: 50% 0 0 50%;
   z-index: -1;
+}
+
+.bg-shape-rotate {
+  width: 70%;
+  height: 70%;
+  border-radius: 0 50% 50% 0;
+  z-index: -1;
+}
+
+.nav-link.active {
+  border-bottom: 3px solid #FA5959;
+}
+
+@media all and (max-width: 768px) {
+  .nav-tabs {
+    border-top: 1px solid #dee2e6;
+  }
 }/*# sourceMappingURL=main.css.map */
