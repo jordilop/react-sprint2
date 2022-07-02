@@ -1,0 +1,78 @@
+//Variables
+$blanco: #fff;
+$negro: #000;
+
+//Tipografia Web
+$font-family-sans-serif: 'Rubik', sans-serif;
+$font-size-base: .8rem;
+
+//Colores principales Web
+$primary: #5265E1;
+$secondary: #FA5959;
+
+//Modificaciones nav
+$navbar-light-color:                $negro;
+$navbar-light-hover-color:          $secondary;
+$navbar-light-toggler-icon-bg:      url("../img/icon-hamburger.svg");
+$navbar-toggler-focus-width:        0;
+$navbar-light-toggler-border-color: 0;
+$navbar-nav-link-padding-x:         1.5rem;
+
+//Modificaciones button
+$input-btn-padding-y:         .5rem;
+$input-btn-padding-x:         1.5rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+
+    // &:focus {
+    //     background-color: $negro;
+    //     background-image: url("../img/icon-close.svg");
+    // }
+}
+
+.btn-secondary {
+    color: $blanco;
+
+    &:hover {
+        color: $secondary;
+        background-color: $blanco;
+        border-color: $secondary;
+    }
+}
+
+.btn-primary {
+    &:hover {
+        color: $primary;
+        background-color: $blanco;
+        border-color: $primary;
+    }
+}
+
+.btn-light {
+    &:hover {
+        color: rgba($negro, .9);
+        background-color: $blanco;
+        border-color: rgba($negro, .9);
+    }
+}
+
+.bg-shape {
+    width: 70%;
+    height: 70%;
+    border-radius: 50% 0 0 50%;
+    z-index: -1;
+}
+
+// @media all and (max-width: 768px) {
+//     // $navbar-light-color: $blanco;
+//     .bg-custom {
+//         color: $blanco;
+//         background-color: #252b46;
+//         opacity: 80%;
+//         // background-color: rgba(36, 43, 70, .55);
+//     }
+// }
