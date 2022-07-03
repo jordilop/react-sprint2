@@ -29,6 +29,9 @@ $nav-tabs-link-hover-border-color:  $blanco;
 $nav-tabs-link-active-color:        $negro;
 $nav-tabs-link-active-border-color: $blanco $blanco $secondary $blanco;
 
+//Modificaciones cards
+$card-spacer-x: 0;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 .navbar-toggler-icon {
@@ -91,12 +94,12 @@ $nav-tabs-link-active-border-color: $blanco $blanco $secondary $blanco;
     }
 }
 
-// @media all and (max-width: 768px) {
-//     // $navbar-light-color: $blanco;
-//     .bg-custom {
-//         color: $blanco;
-//         background-color: #252b46;
-//         opacity: 80%;
-//         // background-color: rgba(36, 43, 70, .55);
-//     }
-// }
+//Posición cards
+@media all and (min-width: 768px) {
+    .card-position1 {
+        margin-top: 3rem;
+    }
+    .card-position2 {
+        margin-top: 6rem;
+    }
+}
