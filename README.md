@@ -1,4 +1,4 @@
-# sprint2
+# Sprint 2
 React online - Sprint 2. Maquetació II - S2. Bootstrap &amp; SASS
 
 ## Nivell 1
