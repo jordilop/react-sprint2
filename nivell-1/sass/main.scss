@@ -30,7 +30,15 @@ $nav-tabs-link-active-color:        $negro;
 $nav-tabs-link-active-border-color: $blanco $blanco $secondary $blanco;
 
 //Modificaciones cards
-$card-spacer-x: 0;
+$card-spacer-x:                     0;
+
+//Modificaciones accordion
+$accordion-button-active-bg:        $blanco;
+$accordion-button-active-color:     $negro;
+$accordion-button-focus-border-color: $blanco;
+$accordion-button-focus-box-shadow: 0;
+$accordion-button-icon:             url("../img/icon-arrow.svg");
+$accordion-button-active-icon:      url("../img/icon-arrow.svg");
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -101,5 +109,20 @@ $card-spacer-x: 0;
     }
     .card-position2 {
         margin-top: 6rem;
+    }
+}
+
+.accordion-button{
+    font-weight: 500;
+
+    //Color icon accordion -> Primero a negro (brightness 0), luego cambio a color aproximado
+    &:not(.collapsed) {    
+        &::after {
+            filter: brightness(0) invert(41%) sepia(31%) saturate(3656%) hue-rotate(332deg) brightness(112%) contrast(96%);
+        }
+    }
+
+    &:hover {
+        color: $secondary;
     }
 }
