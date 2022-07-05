@@ -2208,7 +2208,7 @@ progress {
   background-color: #fff;
   border-color: #a9b2f0;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
+  box-shadow: 0 0 0 0.25rem #FA5959;
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -2423,7 +2423,7 @@ textarea.form-control-lg {
 .form-select:focus {
   border-color: #a9b2f0;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
+  box-shadow: 0 0 0 0.25rem #FA5959;
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 1.5rem;
@@ -2492,7 +2492,7 @@ textarea.form-control-lg {
 .form-check-input:focus {
   border-color: #a9b2f0;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
+  box-shadow: 0 0 0 0.25rem #FA5959;
 }
 .form-check-input:checked {
   background-color: #5265E1;
@@ -2571,10 +2571,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem #FA5959;
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem #FA5959;
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -3011,7 +3011,7 @@ textarea.form-control-lg {
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
+  box-shadow: 0 0 0 0.25rem #FA5959;
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   pointer-events: none;
@@ -4815,7 +4815,7 @@ textarea.form-control-lg {
   color: #4251b4;
   background-color: #e9ecef;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
+  box-shadow: 0 0 0 0.25rem #FA5959;
 }
 
 .page-item:not(:first-child) .page-link {
@@ -5398,7 +5398,7 @@ textarea.form-control-lg {
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
+  box-shadow: 0 0 0 0.25rem #FA5959;
   opacity: 1;
 }
 .btn-close:disabled, .btn-close.disabled {
@@ -11284,6 +11284,10 @@ textarea.form-control-lg {
   color: #FA5959;
   background-color: #fff;
   border-color: #FA5959;
+}
+.btn-secondary:focus {
+  color: #fff;
+  background-color: #FA5959;
 }
 
 .btn-primary:hover {

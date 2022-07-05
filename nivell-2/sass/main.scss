@@ -25,6 +25,8 @@ $navbar-nav-link-padding-x:         1.5rem;
 //Modificaciones button
 $input-btn-padding-y:               .5rem;
 $input-btn-padding-x:               1.5rem;
+// $input-btn-focus-color-opacity: .25 !default;
+$input-btn-focus-color:         $secondary;
 
 // Modificaciones tabs
 $nav-link-color:                    rgba($negro, .9);
@@ -67,6 +69,11 @@ $form-feedback-icon-invalid:        url("../img/icon-error.svg");
         color: $secondary;
         background-color: $blanco;
         border-color: $secondary;
+    }
+
+    &:focus {
+        color: $white;
+        background-color: $secondary;
     }
 }
 
