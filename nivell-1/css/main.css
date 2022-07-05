@@ -11316,6 +11316,16 @@ textarea.form-control-lg {
   border-bottom: 3px solid #FA5959;
 }
 
+.accordion-button {
+  font-weight: 500;
+}
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(41%) sepia(31%) saturate(3656%) hue-rotate(332deg) brightness(112%) contrast(96%);
+}
+.accordion-button:hover {
+  color: #FA5959;
+}
+
 @media all and (max-width: 768px) {
   .nav-tabs {
     border-top: 1px solid #dee2e6;
@@ -11329,13 +11339,4 @@ textarea.form-control-lg {
   .card-position2 {
     margin-top: 6rem;
   }
-}
-.accordion-button {
-  font-weight: 500;
-}
-.accordion-button:not(.collapsed)::after {
-  filter: brightness(0) invert(41%) sepia(31%) saturate(3656%) hue-rotate(332deg) brightness(112%) contrast(96%);
-}
-.accordion-button:hover {
-  color: #FA5959;
 }/*# sourceMappingURL=main.css.map */

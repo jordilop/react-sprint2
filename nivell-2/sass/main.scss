@@ -1,0 +1,158 @@
+//Tipografia Web
+$font-family-sans-serif: 'Rubik', sans-serif;
+$font-size-base: .8rem;
+
+//Colores principales Web
+$primary: #5265E1;
+$secondary: #FA5959;
+
+//Filtro iconos -> Primero a negro (brightness 0), luego cambio a color aproximado
+$icon-filter: brightness(0) invert(41%) sepia(31%) saturate(3656%) hue-rotate(332deg) brightness(112%) contrast(96%);
+
+//Otros colores
+$blanco: #fff;
+$negro: #000;
+$azul-footer: #242946;
+
+//Modificaciones nav
+$navbar-light-color:                $negro;
+$navbar-light-hover-color:          $secondary;
+$navbar-light-toggler-icon-bg:      url("../img/icon-hamburger.svg");
+$navbar-toggler-focus-width:        0;
+$navbar-light-toggler-border-color: 0;
+$navbar-nav-link-padding-x:         1.5rem;
+
+//Modificaciones button
+$input-btn-padding-y:               .5rem;
+$input-btn-padding-x:               1.5rem;
+
+// Modificaciones tabs
+$nav-link-color:                    rgba($negro, .9);
+$nav-link-hover-color:              $secondary;
+$nav-tabs-link-hover-border-color:  $blanco;
+$nav-tabs-link-active-color:        $negro;
+$nav-tabs-link-active-border-color: $blanco $blanco $secondary $blanco;
+
+//Modificaciones cards
+$card-spacer-x:                     0;
+
+//Modificaciones accordion
+$accordion-button-active-bg:        $blanco;
+$accordion-button-active-color:     $negro;
+$accordion-button-focus-border-color: $blanco;
+$accordion-button-focus-box-shadow: 0;
+$accordion-button-icon:             url("../img/icon-arrow.svg");
+$accordion-button-active-icon:      url("../img/icon-arrow.svg");
+
+//Modificaciones form
+$form-feedback-margin-top:          0;
+$form-feedback-icon-invalid:        url("../img/icon-error.svg");
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+
+    // &:focus {
+    //     background-color: $negro;
+    //     background-image: url("../img/icon-close.svg");
+    // }
+}
+
+.btn-secondary {
+    color: $blanco;
+
+    &:hover {
+        color: $secondary;
+        background-color: $blanco;
+        border-color: $secondary;
+    }
+}
+
+.btn-primary {
+    &:hover {
+        color: $primary;
+        background-color: $blanco;
+        border-color: $primary;
+    }
+}
+
+.btn-light {
+    &:hover {
+        color: rgba($negro, .9);
+        background-color: $blanco;
+        border-color: rgba($negro, .9);
+    }
+}
+
+.bg-shape {
+    width: 70%;
+    height: 70%;
+    border-radius: 50% 0 0 50%;
+    z-index: -1;
+}
+
+.bg-shape-rotate {
+    width: 70%;
+    height: 70%;
+    border-radius: 0 50% 50% 0;
+    z-index: -1;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid $secondary;
+}
+
+.accordion-button{
+    font-weight: 500;
+
+    //Color icon accordion -> Primero a negro (brightness 0), luego cambio a color aproximado
+    &:not(.collapsed) {    
+        &::after {
+            filter: $icon-filter;
+        }
+    }
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
+.text-footer {
+    font-size: .7rem;
+    letter-spacing: .3rem;
+}
+
+.bg-footer {
+    background-color: $azul-footer;
+}
+
+.nav-footer {
+    color: $blanco;
+    &:hover {
+        color: $secondary;
+    }
+}
+
+.icon-filter {
+    &:hover {
+        filter: $icon-filter;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .nav-tabs {
+        border-top: 1px solid #dee2e6;
+    }
+}
+
+//Posición cards
+@media all and (min-width: 768px) {
+    .card-position1 {
+        margin-top: 3rem;
+    }
+    .card-position2 {
+        margin-top: 6rem;
+    }
+}
